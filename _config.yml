@@ -1,0 +1,5 @@
+lang: en
+
+main_photo: 
+  src: /assets/images/main.jpg
+  alt: "My profile"

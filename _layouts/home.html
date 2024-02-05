@@ -3,9 +3,48 @@ layout: default
 ---
 
 <div class="flex items-center justify-center h-screen">
-  <h1 class="text-4xl">Awesome Portfolio</h1>
+  <div class="md:mx-2">
+    <img class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full" src="{{ site.main_photo.src }}" alt="{{ site.main_photo.alt }}">
+  </div>
+  <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left ">
+    <h1 class="text-5xl">{{ site.data[site.lang].home.title | default: "Awesome Portfolio" }}</h1>
+    <p class="pt-4">
+      Especializado en el desarrollo de <strong>API RESTs con Ruby on Rails</strong>. He participado en diversas etapas del ciclo de desarrollo de aplicaciones. <strong>Desde su inicio</strong> hasta el despliegue en la <strong>nube</strong>, colaborando en el diseño, implementación y optimización de soluciones. Me encanta enfrentar desafíos, aprender y resolver problemas de forma efectiva.
+    </p>
+    <div class="pt-4 flex flex-wrap justify-center md:justify-start">
+      <span class="inline-block pr-2 mr-2 mb-2">#Rails</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#Ruby</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#Python</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#HTML</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#Css</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#Js</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#Docker</span>
+      <span class="inline-block pr-2 mr-2 mb-2">#AWS</span>
+    </div>
+    <p class=" pt-4 hidden md:block">Me puedes contactar por cualquiera de estos canales:</p>
+    <div class="flex justify-center md:justify-start pt-2 gap-2">
+      <a class="p-3 transition hover:scale-110 duration-300" href="mailto:andres.ch@protonmail.com">
+        <img class="h-6" src="/assets/images/rrss/email.svg" alt="Email Icon">
+      </a>
+      <a class="p-3 transition hover:scale-110 duration-300" href="https://github.com/a-chacon" target="_blank">
+        <img class="h-6" src="/assets/images/rrss/github-mark.svg" alt="Github Icon">
+      </a>
+      <a class="p-3 transition hover:scale-110 duration-300" href="https://t.me/a_chacon" target="_blank">
+        <img class="h-6" src="/assets/images/rrss/telegram.svg" alt="Telegram Icon">
+      </a>
+      <a class="p-3 transition hover:scale-110 duration-300" href="https://stackoverflow.com/users/16847024/andr%c3%a9s" target="_blank">
+        <img class="h-6" src="/assets/images/rrss/stack-overflow.svg" alt="StackOverflow Icon">
+      </a>
+      <a class="p-3 transition hover:scale-110 duration-300" href="https://discord.com/users/673943171369140252" target="_blank">
+        <img class="h-6" src="/assets/images/rrss/discord.svg" alt="Discord Icon">
+      </a>
+      <a class="p-3 transition hover:scale-110 duration-300" rel="me" href="https://lile.cl/@achacon" target="_blank">
+        <img class="h-6" src="/assets/images/rrss/mastodon.svg" alt="Mastodon Icon">
+      </a>
+    </div>
+  </div>
 </div>
 
-<article class="prose mx-auto my-12">
+<article class="prose mx-auto mt-12 mb-24">
   {{content}}
 </article>
