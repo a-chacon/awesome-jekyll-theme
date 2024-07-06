@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = 'awesome-portfolio'
-  spec.version       = '0.1.0'
+  spec.name = 'awesome-jekyll-theme'
+  spec.version       = '0.0.1'
   spec.authors       = ['a-chacon']
   spec.email         = ['andres.ch@protonmail.com']
 
-  spec.summary       = ''
+  spec.summary       = 'Simple but powerfull portfolio jekyll theme.'
   spec.homepage      = 'https://a-chacon.com'
   spec.license       = 'MIT'
 
@@ -15,4 +15,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency 'jekyll', '~> 4.3'
+  spec.add_dependency 'jekyll-archives', '~> 2.2.1'
+  spec.add_dependency 'jekyll-polyglot', '~> 1.8'
+  spec.add_dependency 'jekyll-seo-tag'
 end

@@ -1,0 +1,23 @@
+<div class="flex flex-col justify-between">
+  <div class="flex flex-col justify-between max-w-lg">
+    <a href="{{include.post.url}}">
+      <div class="w-full h-60 bg-cover bg-center" style="background-image: url('{{post.image}}')">
+      </div>
+    </a>
+
+    <div class="pt-4">
+      <a href="{{site.url}}/category/{{include.post.categories[0] | replace: ' ', '-'| downcase}}"
+        class="font-mulish text-sm hover:text-sky-400 text-gray-600">
+        {{ include.post.categories[0] | upcase }}
+      </a>
+    </div>
+
+    <a href="{{include.post.url}}">
+      <h2 class="hover:underline decoration-2 underline-offset-2 font-semibold text-2xl text-gray-800 pt-2 ">{{
+        include.post.title }}</h2>
+    </a>
+  </div>
+  <span class="text-sm text-gray-400 pt-4">
+    {{ include.post.date | date: "%-d/%-m/%Y" }}
+  </span>
+</div>

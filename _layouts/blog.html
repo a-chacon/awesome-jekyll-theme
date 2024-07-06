@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="container mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
+  {% if site.categories.size > 0 %}
+  <div class="flex flex-wrap justify-center border-gray-400 border-y mb-4 md:mb-12 ">
+    {% for category in site.categories %}
+    {% assign category_name = category[0] %}
+    <a href="{{site.url}}/category/{{category_name| replace: ' ', '-'| downcase}}"
+      class="block font-mulish hover:text-sky-400 p-4 {% if category_name == page.title %}font-black{% endif %}">
+      {{ category_name | upcase }}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% assign posts = page.posts | default: site.posts %}
+  {% assign first_post = posts[0] %}
+
+  {% include post_main.html post=first_post %}
+
+
+  {% assign rest_posts = posts | slice: 1, posts.size %}
+  {% if rest_posts.size > 0 %}
+
+  <hr class="h-px my-12 bg-gray-400 border-0 dark:bg-gray-700">
+
+  <h1 class="text-2xl md:text-4xl font-bold text-gray-800">Mas Artículos</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
+    {% for post in rest_posts %}
+    {% include post_card.html post=post %}
+    {% endfor %}
+  </div>
+  {% endif%}
+</section>

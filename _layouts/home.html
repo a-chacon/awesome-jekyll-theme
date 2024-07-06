@@ -2,49 +2,123 @@
 layout: default
 ---
 
-<div class="flex items-center justify-center h-screen">
+<section id="main" class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2">
   <div class="md:mx-2">
-    <img class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full" src="{{ site.main_photo.src }}" alt="{{ site.main_photo.alt }}">
+    <img class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full" src="{{ page.image }}"
+      alt="{{ page.description }}">
   </div>
-  <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left ">
-    <h1 class="text-5xl">{{ site.data[site.lang].home.title | default: "Awesome Portfolio" }}</h1>
-    <p class="pt-4">
-      Especializado en el desarrollo de <strong>API RESTs con Ruby on Rails</strong>. He participado en diversas etapas del ciclo de desarrollo de aplicaciones. <strong>Desde su inicio</strong> hasta el despliegue en la <strong>nube</strong>, colaborando en el diseño, implementación y optimización de soluciones. Me encanta enfrentar desafíos, aprender y resolver problemas de forma efectiva.
+  <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0">
+    <div class="prose prose-h1:mb-1">
+      {{ page.main_content | markdownify }}
+    </div>
+
+    <p class="mt-4 ">
+      {{ site.data[site.active_lang].strings.home.contact_me | default: site.data['en'].strings.home.contact_me}}
     </p>
-    <div class="pt-4 flex flex-wrap justify-center md:justify-start">
-      <span class="inline-block pr-2 mr-2 mb-2">#Rails</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#Ruby</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#Python</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#HTML</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#Css</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#Js</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#Docker</span>
-      <span class="inline-block pr-2 mr-2 mb-2">#AWS</span>
+
+    {%include contact_channels.html %}
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+  <div class="py-16">
+    <h2 class="text-3xl font-bold text-center md:text-left">
+      {{ site.data[site.active_lang].strings.home.blog_title | default:
+      site.data['en'].strings.home.blog_title}}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
+      {% for post in site.posts limit:3 %}
+      {% include post_card.html post=post %}
+      {% endfor %}
     </div>
-    <p class=" pt-4 hidden md:block">Me puedes contactar por cualquiera de estos canales:</p>
-    <div class="flex justify-center md:justify-start pt-2 gap-2">
-      <a class="p-3 transition hover:scale-110 duration-300" href="mailto:andres.ch@protonmail.com">
-        <img class="h-6" src="/assets/images/rrss/email.svg" alt="Email Icon">
-      </a>
-      <a class="p-3 transition hover:scale-110 duration-300" href="https://github.com/a-chacon" target="_blank">
-        <img class="h-6" src="/assets/images/rrss/github-mark.svg" alt="Github Icon">
-      </a>
-      <a class="p-3 transition hover:scale-110 duration-300" href="https://t.me/a_chacon" target="_blank">
-        <img class="h-6" src="/assets/images/rrss/telegram.svg" alt="Telegram Icon">
-      </a>
-      <a class="p-3 transition hover:scale-110 duration-300" href="https://stackoverflow.com/users/16847024/andr%c3%a9s" target="_blank">
-        <img class="h-6" src="/assets/images/rrss/stack-overflow.svg" alt="StackOverflow Icon">
-      </a>
-      <a class="p-3 transition hover:scale-110 duration-300" href="https://discord.com/users/673943171369140252" target="_blank">
-        <img class="h-6" src="/assets/images/rrss/discord.svg" alt="Discord Icon">
-      </a>
-      <a class="p-3 transition hover:scale-110 duration-300" rel="me" href="https://lile.cl/@achacon" target="_blank">
-        <img class="h-6" src="/assets/images/rrss/mastodon.svg" alt="Mastodon Icon">
+    <div class="pt-4 text-center">
+      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="/blog">
+        {{ site.data[site.active_lang].strings.home.see_more_posts | default:
+        site.data['en'].strings.home.see_more_posts}}
       </a>
     </div>
   </div>
+</section>
+{% endif %}
+
+
+{% if site.projects.size > 0 %}
+<section id="projects" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+  <div class="py-16">
+    <h2 class="text-3xl font-bold text-center md:text-left">
+      {{ site.data[site.active_lang].strings.home.projects_title | default:
+      site.data['en'].strings.home.projects_title}}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 py-8 md:py-16">
+      {% for project in site.projects limit:2 %}
+      {% include project_card.html project=project%}
+      {% endfor %}
+    </div>
+    <div class="pt-4 text-center ">
+      <a class="font-mulish hover:text-sky-400 hover:underline font-bold" href="/projects">
+        {{ site.data[site.active_lang].strings.home.see_more_projects | default:
+        site.data['en'].strings.home.see_more_projects }}
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section id="content" class="container mx-auto min-h-screen">
+  <article class="prose mx-auto py-16">
+    {{content}}
+  </article>
+</section>
+
+<div id="dot-nav" class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
+  <a href="#main" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
+  {% if site.posts.size > 0 %}
+  <a href="#blog" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  {% endif %}
+  {% if site.projects.size > 0 %}
+  <a href="#projects" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  {% endif %}
+  <a href="#content" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
 </div>
 
-<article class="prose mx-auto mt-12 mb-24">
-  {{content}}
-</article>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    const navDots = document.querySelectorAll('#dot-nav .dot');
+
+    function onScroll() {
+      let currentSection = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 120) { // Ajusta el valor según sea necesario
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navDots.forEach(dot => {
+        dot.classList.remove('bg-gray-800');
+        if (dot.getAttribute('href') === `#${currentSection}`) {
+          dot.classList.add('bg-gray-800');
+        }
+      });
+    }
+
+    function smoothScroll(target) {
+      document.querySelector(target).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    navDots.forEach(dot => {
+      dot.addEventListener('click', function (event) {
+        event.preventDefault();
+        const target = this.getAttribute('href');
+        smoothScroll(target);
+      });
+    });
+
+    window.addEventListener('scroll', onScroll);
+  });
+</script>

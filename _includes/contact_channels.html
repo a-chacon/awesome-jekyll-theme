@@ -1,0 +1,34 @@
+<div class="flex justify-center md:justify-start pt-2 gap-6">
+  {% assign rrss = site.rrss %}
+  {% if rrss.email %}
+  <a class="transition hover:scale-110 duration-300" href="mailto:{{ rrss.email }}">
+    <img class="h-6" src="/assets/images/rrss/email.svg" alt="Email Icon">
+  </a>
+  {% endif %}
+  {% if rrss.github %}
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.github }}" target="_blank">
+    <img class="h-6" src="/assets/images/rrss/github-mark.svg" alt="Github Icon">
+  </a>
+  {% endif %}
+  {% if rrss.telegram %}
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.telegram }}" target="_blank">
+    <img class="h-6" src="/assets/images/rrss/telegram.svg" alt="Telegram Icon">
+  </a>
+  {% endif %}
+  {% if rrss.stackoverflow %}
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.stackoverflow }}" target="_blank">
+
+    <img class="h-6" src="/assets/images/rrss/stack-overflow.svg" alt="StackOverflow Icon">
+  </a>
+  {% endif %}
+  {% if rrss.discord %}
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.discord }}" target="_blank">
+    <img class="h-6" src="/assets/images/rrss/discord.svg" alt="Discord Icon">
+  </a>
+  {% endif %}
+  {% if rrss.mastodon %}
+  <a class="transition hover:scale-110 duration-300" rel="me" href="{{ rrss.mastodon }}" target="_blank">
+    <img class="h-6" src="/assets/images/rrss/mastodon.svg" alt="Mastodon Icon">
+  </a>
+  {% endif %}
+</div>

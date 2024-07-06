@@ -2,4 +2,45 @@
 layout: default
 ---
 
-{{ content }}
+<link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
+<div class="container mx-auto">
+  <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
+    <div class="pb-4">
+      <a href="{{site.url}}/category/{{page.categories[0] | replace: ' ', '-' | downcase}}"
+        class="no-underline font-mulish text-sm hover:text-sky-400 text-gray-500">
+        {{ page.categories[0] | upcase }}
+      </a>
+    </div>
+    <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
+    <div class="flex text-sm font-mulish">
+      <p>{{ page.author }}</p>
+      <p class="px-2">•</p>
+      <p>{{ page.date | date: "%-d %B %Y" }}</p>
+      <p class="px-2">•</p>
+      <p>
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} mins {% endif %} </p>
+    </div>
+
+    <img class="mt-0" src="{{page.image}}" alt="{{page.title}}">
+
+    <div class="my-6">
+      {{content}}
+    </div>
+
+    <div class="mx-auto py-8">
+      {% include sharing.html %}
+    </div>
+
+    <div class="font-mulish flex justify-center mb-10">
+      {% if page.previous.url %}
+      <a class="pr-2" href="{{page.previous.url}}">&laquo; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="pl-2" href="{{page.next.url}}">{{ page.next.title }} &raquo;</a>
+      {% endif %}
+    </div>
+
+    {% include comment_system.html %}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+---
+permalink: /404.html
+layout: 404
+---
+# 404
+
+**Page not found :(**
+
+The requested page could not be found.
+

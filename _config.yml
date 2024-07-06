@@ -1,5 +1,38 @@
-lang: en
+title: awesome-portfolio
+logo: /assets/images/logo.png
 
-main_photo: 
-  src: /assets/images/main.jpg
-  alt: "My profile"
+collections:
+  projects:
+    output: true
+
+rrss:
+  email: "example@example.cl"
+  github: "https://github.com/"
+  telegram: "https://t.me/"
+  stackoverflow: "https://stackoverflow.com"
+  discord: "https://discord.com/"
+  mastodon: "https://lile.cl/"
+
+plugins:
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-polyglot
+
+languages: ["en"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: blog
+  permalinks:
+    category: "/category/:name/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: "Mr. Hyde"
+      time: "2 min"
