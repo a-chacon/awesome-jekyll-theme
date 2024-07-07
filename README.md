@@ -4,9 +4,14 @@ A preview of it will be my website: <https://a-chacon.com>
 
 ## ScreenShots
 
+### Home Layout
 ![main page of theme](/screenshots/main.png?raw=true)
 
+### Blog Layout
+
 ![blog page of theme](/screenshots/blog.png?raw=true)
+
+### Projects Layout
 
 ![projects page of theme](/screenshots/projects.png?raw=true)
 
