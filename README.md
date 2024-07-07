@@ -7,15 +7,15 @@ Ideal for portfolios, blogs, and project showcases with responsive layouts and e
 
 ### Home Layout
 
-![main page of theme](/screenshots/main.png?raw=true)
+![main page of theme](https://raw.githubusercontent.com/a-chacon/awesome-jekyll-theme/main/screenshots/main.png)
 
 ### Blog Layout
 
-![blog page of theme](/screenshots/blog.png?raw=true)
+![blog page of theme](https://raw.githubusercontent.com/a-chacon/awesome-jekyll-theme/main/screenshots/blog.png)
 
 ### Projects Layout
 
-![projects page of theme](/screenshots/projects.png?raw=true)
+![projects page of theme](https://raw.githubusercontent.com/a-chacon/awesome-jekyll-theme/main/screenshots/projects.png)
 
 ## Features
 

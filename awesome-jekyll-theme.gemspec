@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['a-chacon']
   spec.email         = ['andres.ch@protonmail.com']
 
-  spec.summary       = 'Simple but powerfull portfolio jekyll theme.'
+  spec.summary       = 'A clean, versatile Jekyll theme with minimalist design and robust features. Ideal for portfolios, blogs, and project showcases with responsive layouts and easy customization.'
   spec.homepage      = 'https://github.com/a-chacon/awesome-jekyll-portfolio'
   spec.license       = 'MIT'
 
