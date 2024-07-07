@@ -16,7 +16,10 @@
       </a>
     </div>
     <a href="{{ include.post.url }}"
-      class="hover:underline decoration-2 underline-offset-2 hover:text-sky-400 text-lg font-semibold ">Leer Mas -></a>
+      class="hover:underline decoration-2 underline-offset-2 hover:text-sky-400 text-lg font-semibold ">
+      {{ site.data[site.active_lang].strings.blog.read_more | default:
+      site.data['en'].strings.blog.read_more}}
+    </a>
   </div>
   <div class="w-full md:w-1/2 h-80 md:h-96 bg-cover bg-center"
     style="background-image: url('{{ include.post.image }}')">

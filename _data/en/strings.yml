@@ -1,7 +1,4 @@
 home:
-  title: "Hello Dog"
-  subtitle: "Soy Andres, Desarrollador Web en Proceso."
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et turpis vitae enim venenatis blandit. Nullam tempor, metus ornare semper ornare, felis orci bibendum nunc, eget ullamcorper nisi diam quis tortor."
   contact_me: "You can contact me for any of this channels:"
   blog_title: "Blog: Last Posts"
   see_more_posts: "See More Posts ->"
@@ -11,3 +8,6 @@ footer:
   title: "Let's keep in touch!"
   description: " Find me on any of these platforms. "
   pages: Pages
+blog:
+  read_more: "Read More ->"
+  more_articles: "More Posts"

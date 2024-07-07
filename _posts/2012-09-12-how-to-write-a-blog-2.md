@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Cómo ganar dinero con la inteligencia artificial: 11 ideas únicas'
+title: 'How to make money with artificial intelligence: 11 unique ideas'
 image: 'https://picsum.photos/500/300'
 category: just ruby
 ---

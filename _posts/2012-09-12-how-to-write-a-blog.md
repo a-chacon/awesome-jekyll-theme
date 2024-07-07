@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Cómo crear una página web: Guía paso a paso'
-image: 'https://picsum.photos/500/300'
+title: 'How to create a web page: Step by step guide'
+image: 'https://picsum.photos/800/400'
 category: docker
 ---
 Lorem markdownum herbae. Officiique tinxit, ac Iovis excussis pressitque [et

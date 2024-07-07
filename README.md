@@ -1,4 +1,4 @@
-# awesome-portfolio
+# Awesome Jekyll Theme
 
 A preview of it will be my website: <https://a-chacon.com>
 

@@ -1,11 +1,11 @@
 ---
 layout: project
 title: Amazing Theme
-image: 'https://picsum.photos/seed/picsum/800/400'
+image: 'https://picsum.photos/800/400'
 ---
-Amazing is a clean, minimalistic Jekyll theme designed to offer a delightful blogging experience. With a focus on simplicity and aesthetics, Wind brings an elegant touch to your blog or personal website.Amazing is a clean, minimalistic Jekyll theme designed to offer a delightful blogging experience. With a focus on simplicity and aesthetics, Wind brings an elegant touch to your blog or personal website.
+Mauris eget varius turpis. Integer sit amet sollicitudin velit. Aenean ac lacus in eros cursus iaculis et id tellus. Pellentesque eu ante id mi eleifend sollicitudin nec at leo. Donec congue enim id massa vulputate, et posuere purus vehicula. Nunc euismod quam in tincidunt malesuada.
 
-the gihub is:
+You can find it on Github:
 
-- <https://google.com>
+- <https://github.com>
 

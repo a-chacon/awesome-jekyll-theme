@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cómo crear una landing page efectiva para tu campaña
+title: How to create an effective landing page for your campaign
 image: 'https://picsum.photos/500/300'
 category: ruby on rails
 ---

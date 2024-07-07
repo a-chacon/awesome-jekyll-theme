@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Jekyll!
-image: 'https://picsum.photos/seed/picsum/200/300'
+image: 'https://picsum.photos/700/300'
 category: ruby on rails
 ---
 Lorem markdownum duobus, ore terribili pronis. Quae genitis nihil.

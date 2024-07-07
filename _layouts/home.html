@@ -56,7 +56,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="pt-4 text-center ">
-      <a class="font-mulish hover:text-sky-400 hover:underline font-bold" href="/projects">
+      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="/projects">
         {{ site.data[site.active_lang].strings.home.see_more_projects | default:
         site.data['en'].strings.home.see_more_projects }}
       </a>
@@ -65,7 +65,7 @@ layout: default
 </section>
 {% endif %}
 
-<section id="content" class="container mx-auto min-h-screen">
+<section id="content" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
   <article class="prose mx-auto py-16">
     {{content}}
   </article>
