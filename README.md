@@ -2,6 +2,14 @@
 
 A preview of it will be my website: <https://a-chacon.com>
 
+## ScreenShots
+
+![main page of theme](/screenshots/main.png?raw=true)
+
+![blog page of theme](/screenshots/blog.png?raw=true)
+
+![projects page of theme](/screenshots/projects.png?raw=true)
+
 **The documentation is really incomplete, sorry. I will be working on it.**
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
