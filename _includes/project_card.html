@@ -1,6 +1,6 @@
 <div class="rounded-lg hover:bg-gray-50 p-8 shadow">
-  <a href="{{include.project.url}}">
-    <img src="{{include.project.image}}" alt="image" class="object-cover w-full h-60" />
+  <a href="{{include.project.url | relative_url}}">
+    <img src="{{include.project.image | relative_url}}" alt="image" class="object-cover w-full h-60" />
     <h2 class="text-2xl hover:underline font-bold py-4 text-gray-800">{{include.project.title}}</h2>
     <div class="font-mulish">
       {{include.project.excerpt}}

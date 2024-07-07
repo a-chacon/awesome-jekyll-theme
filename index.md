@@ -19,6 +19,7 @@ main_content: >
   **Lecto viae, quod Naxos tumulos quoque.** Et illo de nati iuvenci oris habet,
   perdidit parantur! **#Rails #Ruby #Python #HTML #Css #Js #AWS**
 footer: true
+permalink: /
 ---
 ## Hello World
 

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/assets/css/dist-style.css" rel="stylesheet">
+  <link href="{{ '/assets/css/dist-style.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/fonts.css' | relative_url }}" rel="stylesheet">
   {% seo %}
   {% include custom_head.html %}
 </head>

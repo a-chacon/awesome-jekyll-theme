@@ -1,5 +1,6 @@
 title: Jekyll Theme
 logo: /assets/images/logo.png
+baseurl: /awesome-jekyll-theme
 
 collections:
   projects:

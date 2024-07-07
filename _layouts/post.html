@@ -22,7 +22,7 @@ layout: default
         {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} mins {% endif %} </p>
     </div>
 
-    <img class="mt-0" src="{{page.image}}" alt="{{page.title}}">
+    <img class="mt-0" src="{{page.image | relative_url}}" alt="{{page.title}}">
 
     <div class="my-6">
       {{content}}

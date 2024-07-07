@@ -25,7 +25,7 @@
               {% if page.footer %}
               <li>
                 <a class="font-mulish text-slate-600 hover:text-sky-400 dark:text-slate-300 dark:hover:text-slate-200 "
-                  href="{{ page.url }}">{{ page.title | default: page.name }}</a>
+                  href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a>
               </li>
               {% endif%}
               {% endfor %}

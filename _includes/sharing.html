@@ -1,7 +1,7 @@
 <div class="sharing-buttons flex flex-wrap gap-1 justify-center ">
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://facebook.com/sharer/sharer.php?u={{ site.url | uri_escape | append: page.url }}"
+    href="https://facebook.com/sharer/sharer.php?u={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share on Facebook">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -13,7 +13,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://twitter.com/intent/tweet?url={{ site.url | uri_escape | append: page.url }}&text={{ page.title }}"
+    href="https://twitter.com/intent/tweet?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&text={{ page.title }}"
     aria-label="Share on Twitter">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -25,7 +25,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | uri_escape | append: page.url }}&title={{ page.title }}&summary={{ page.title }}&source={{ site.url | uri_escape }}"
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | uri_escape | append:site.baseurl | append: page.url }}&title={{ page.title }}&summary={{ page.title }}&source={{ site.url | uri_escape }}"
     aria-label="Share on Linkedin">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -37,7 +37,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://pinterest.com/pin/create/button/?url={{ site.url | uri_escape | append: page.url }}&media={{ site.url | uri_escape }}&description={{ page.title }}"
+    href="https://pinterest.com/pin/create/button/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&media={{ site.url | uri_escape }}&description={{ page.title }}"
     aria-label="Share on Pinterest" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -49,7 +49,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://reddit.com/submit/?url={{ site.url | uri_escape | append: page.url }}&resubmit=true&title={{ page.title }}"
+    href="https://reddit.com/submit/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&resubmit=true&title={{ page.title }}"
     aria-label="Share on Reddit" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -73,7 +73,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="https://telegram.me/share/url?text={{ page.title | uri_escape }}&url={{ site.url | uri_escape | append: page.url }}"
+    href="https://telegram.me/share/url?text={{ page.title | uri_escape }}&url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share on Telegram" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -85,7 +85,7 @@
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
     target="_blank" rel="noopener"
-    href="mailto:?subject={{ page.title | uri_escape }}&body={{ site.url | uri_escape | append: page.url }}"
+    href="mailto:?subject={{ page.title | uri_escape }}&body={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share by Email" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
