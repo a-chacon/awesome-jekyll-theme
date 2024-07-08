@@ -5,13 +5,13 @@
   <div class="container mx-auto">
     <div class="flex flex-wrap text-left">
       <div class="w-full md:w-6/12 md:px-4">
-        <h4 class="text-3xl fonat-semibold">
+        <h5 class="text-3xl fonat-semibold">
           {{ site.data[site.active_lang].strings.footer.title | default: site.data['en'].strings.footer.title}}
-        </h4>
-        <h5 class="font-mulish text-lg dark:text-zinc-300 mt-2 mb-2">
+        </h5>
+        <p class="font-mulish text-lg dark:text-zinc-300 mt-2 mb-2">
           {{ site.data[site.active_lang].strings.footer.description | default:
           site.data['en'].strings.footer.description}}
-        </h5>
+        </p>
         {% include contact_channels.html %}
       </div>
       <div class="w-full md:w-6/12 md:text-right py-4 md:py-0">

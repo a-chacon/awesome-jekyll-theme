@@ -56,7 +56,8 @@ layout: default
       {% endfor %}
     </div>
     <div class="pt-4 text-center ">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/projects' | relative_url }}">
+      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
+        href="{{'/projects' | relative_url }}">
         {{ site.data[site.active_lang].strings.home.see_more_projects | default:
         site.data['en'].strings.home.see_more_projects }}
       </a>
@@ -72,14 +73,18 @@ layout: default
 </section>
 
 <div id="dot-nav" class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
-  <a href="#main" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
+  <a href="#main" aria-label="Jump to main section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
   {% if site.posts.size > 0 %}
-  <a href="#blog" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  <a href="#blog" aria-label="Jump to blog section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
   {% endif %}
   {% if site.projects.size > 0 %}
-  <a href="#projects" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  <a href="#projects" aria-label="Jump to projects section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
   {% endif %}
-  <a href="#content" class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  <a href="#content" aria-label="Jump to content section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
 </div>
 
 <script>

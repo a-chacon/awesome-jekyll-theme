@@ -2,7 +2,7 @@
   <div class="max-w-xl">
     <div class="mb-4 mt-4 md:mt-0 md:mb-6">
       <a href="{{site.url}}{{site.baseurl}}/category/{{include.post.categories[0] | replace: ' ', '-' | downcase}}"
-        class="font-mulish hover:text-sky-400 text-gray-600">
+        aria-label="Category {{include.post.categories[0]}} url" class="font-mulish hover:text-sky-400 text-gray-600">
         {{ include.post.categories[0] | upcase }}
       </a>
     </div>
