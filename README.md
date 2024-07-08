@@ -1,3 +1,11 @@
+<a href="https://jekyll-themes.com/a-chacon/awesome-jekyll-theme">
+  <img
+    src="https://img.shields.io/badge/featured%20on-JT-red.svg"
+    height="20"
+    alt="Jekyll Themes Shield"
+  />
+</a>
+
 # Awesome Jekyll Theme
 
 A clean, versatile Jekyll theme with minimalist design and robust features.
