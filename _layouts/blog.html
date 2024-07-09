@@ -8,6 +8,7 @@ layout: default
     {% for category in site.categories %}
     {% assign category_name = category[0] %}
     <a href="{{site.url}}/category/{{category_name| replace: ' ', '-'| downcase}}"
+      aria-label="Category {{category_name}} page"
       class="block font-mulish hover:text-sky-400 p-4 {% if category_name == page.title %}font-black{% endif %}">
       {{ category_name | upcase }}
     </a>
