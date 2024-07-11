@@ -1,9 +1,15 @@
 <div class="rounded-lg hover:bg-gray-50 p-8 shadow">
   <a href="{{include.project.url | relative_url}}">
     <img src="{{include.project.image | relative_url}}" alt="image" class="object-cover w-full h-60" />
-    <h2 class="text-2xl hover:underline font-bold py-4 text-gray-800">{{include.project.title}}</h2>
+    <p class="font-mulish text-gray-500 mt-6 mb-2 ">{{include.project.category | upcase}}</p>
+    <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.project.title}}</h2>
     <div class="font-mulish">
       {{include.project.excerpt}}
+    </div>
+    <div class="my-4">
+      {% for tag in include.project.tags %}
+      <category class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</category>
+      {% endfor %}
     </div>
   </a>
 </div>

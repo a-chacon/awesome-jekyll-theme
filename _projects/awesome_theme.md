@@ -2,6 +2,10 @@
 layout: project
 title: Awesome Theme
 image: 'https://picsum.photos/900/400'
+category: Theme
+tags:
+  - tailwindcss
+  - html
 ---
 Nunc eleifend dolor vitae lorem dictum rhoncus. Proin id pulvinar turpis, et eleifend quam.
 
