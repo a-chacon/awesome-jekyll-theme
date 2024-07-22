@@ -21,7 +21,9 @@
       site.data['en'].strings.blog.read_more}}
     </a>
   </div>
-  <div class="w-full md:w-1/2 h-80 md:h-96 bg-cover bg-center"
+
+  <a href="{{ include.post.url | relative_url }}"
+    class="hover:opacity-90 transition duration-300 w-full md:w-1/2 h-80 md:h-96 bg-cover bg-center"
     style="background-image: url('{{ include.post.image }}')">
-  </div>
+  </a>
 </div>

@@ -1,16 +1,17 @@
 <div class="flex flex-col justify-between">
   <div class="flex flex-col justify-between max-w-lg">
-    <div class="pb-6">
+    <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
+      <div class="hover:opacity-90 transition duration-300 w-full h-60 bg-cover bg-center"
+        style="background-image: url('{{post.image}}')">
+      </div>
+    </a>
+    <div class="pt-6">
       <a href="{{site.url}}{{site.baseurl}}/category/{{include.post.categories[0] | replace: ' ', '-'| downcase}}"
         aria-label="Category {{include.post.categories[0]}} url"
         class="font-mulish text-sm hover:text-sky-400 text-gray-600">
         {{ include.post.categories[0] | upcase }}
       </a>
     </div>
-    <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
-      <div class="w-full h-60 bg-cover bg-center" style="background-image: url('{{post.image}}')">
-      </div>
-    </a>
     <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
       <h2 class="hover:underline decoration-2 underline-offset-2 font-semibold text-2xl text-gray-800 pt-6">{{
         include.post.title }}</h2>
