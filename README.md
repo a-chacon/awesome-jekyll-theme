@@ -1,14 +1,5 @@
-<style>
-.badge-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50px; /* Full height of the viewport */
-    gap: 10px; /* Adjust spacing between badges */
-}
-</style>
-<div class="badge-container">
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 50px;">
+
 <a href="https://jekyll-themes.com/a-chacon/awesome-jekyll-theme">
   <img
     src="https://img.shields.io/badge/featured%20on-JT-red.svg"
