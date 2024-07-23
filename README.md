@@ -1,12 +1,27 @@
+<style>
+.badge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Full height of the viewport */
+    gap: 10px; /* Adjust spacing between badges */
+}
+</style>
+<div class="badge-container">
 <a href="https://jekyll-themes.com/a-chacon/awesome-jekyll-theme">
   <img
     src="https://img.shields.io/badge/featured%20on-JT-red.svg"
-    height="20"
     alt="Jekyll Themes Shield"
   />
 </a>
 
-![main](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+![GitHub Pages](https://github.com/a-chacon/awesome-jekyll-theme/actions/workflows/jekyll.yml/badge.svg?branch=main)
+![GitHub License](https://img.shields.io/github/license/a-chacon/awesome-jekyll-theme)
+![Gem Downloads (for latest version)](https://img.shields.io/gem/dtv/awesome-jekyll-theme)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/a-chacon/awesome-jekyll-theme)
+
+</div>
 
 # Awesome Jekyll Theme
 
