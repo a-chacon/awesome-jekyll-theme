@@ -6,6 +6,8 @@
   />
 </a>
 
+![main](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+
 # Awesome Jekyll Theme
 
 A clean, versatile Jekyll theme with minimalist design and robust features.
