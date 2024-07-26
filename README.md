@@ -45,7 +45,9 @@ Ideal for portfolios, blogs, and project showcases with responsive layouts and e
 
 5. **Category-based organization** for blog posts, allowing for easy content discovery and improved site structure.
 
-## Installation
+## Installation (Recommended Way to use)
+
+Create your Jekyll site with `jekyll new site` if you don't have one. Then:
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -63,9 +65,13 @@ And then execute:
 
     bundle
 
-Or install it yourself as:
+Finally, run your site again with:
 
-    gem install awesome-jekyll-theme
+```
+bundle exec jekyll serve
+```
+
+**You can use the repository as a template too. But you will lose updates.**
 
 ## Usage
 
