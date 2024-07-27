@@ -2,7 +2,7 @@
 layout: post
 title: How to create an effective landing page for your campaign
 image: 'https://picsum.photos/500/300'
-category: ruby on rails
+category: Ruby On Rails
 ---
 Lorem markdownum causa finita rector cura uterque: Telamonque possit; attulerat
 totaque pugnat at vincar corpore ad exiguo canisve. Est tuo coniugis siquis
