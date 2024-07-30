@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require_relative 'lib/awesome-jekyll-theme/version'
+
 Gem::Specification.new do |spec|
   spec.name = 'awesome-jekyll-theme'
-  spec.version       = '0.0.4'
+  spec.version       = AwesomeJekyllTheme::VERSION
   spec.authors       = ['a-chacon']
   spec.email         = ['andres.ch@protonmail.com']
 
