@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.0...awesome-jekyll-theme/v0.1.1) (2024-07-30)
+
+
+### Bug Fixes
+
+* add the rest of workflow for push gem ([a342e77](https://github.com/a-chacon/awesome-jekyll-theme/commit/a342e77fcffb2056d0ccbc90b2fe20a9822ecb51))
+
 ## [0.1.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme-v0.0.4...awesome-jekyll-theme/v0.1.0) (2024-07-30)
 
 
