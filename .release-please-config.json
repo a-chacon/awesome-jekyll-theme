@@ -3,7 +3,8 @@
   "packages": {
     ".": {
       "release-type": "ruby",
-      "package-name": "awesome-jekyll-theme"
+      "package-name": "awesome-jekyll-theme",
+      "version-file": "lib/awesome-jekyll-theme/version.rb"
     }
   }
 }

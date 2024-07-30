@@ -1,3 +1,3 @@
 module AwesomeJekyllTheme
-  VERSION = '0.0.4'
+  VERSION = Gem::Version.new('0.0.4')
 end
