@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.2...awesome-jekyll-theme/v0.1.3) (2024-07-30)
+
+
+### Bug Fixes
+
+* use oficial ruby publish workflow ([e3588fb](https://github.com/a-chacon/awesome-jekyll-theme/commit/e3588fb613607c5592a936ad676be42cecf8c794))
+
 ## [0.1.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.1...awesome-jekyll-theme/v0.1.2) (2024-07-30)
 
 
