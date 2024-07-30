@@ -22,7 +22,7 @@ jobs:
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
           release-type: ruby
-          version-file: lib/awesome-jekyll-theme/version.rb
+          package-name: awesome-jekyll-theme
       - uses: actions/checkout@v4
       # Setup ruby if a release was created
       - uses: ruby/setup-ruby@v1
