@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.3...awesome-jekyll-theme/v0.2.0) (2024-07-30)
+
+
+### Features
+
+* add rakefile ([654a135](https://github.com/a-chacon/awesome-jekyll-theme/commit/654a1351e354b67f3807f815789f8d6a37c9b40e))
+
 ## [0.1.3](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.2...awesome-jekyll-theme/v0.1.3) (2024-07-30)
 
 
