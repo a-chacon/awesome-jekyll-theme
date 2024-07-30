@@ -16,24 +16,14 @@ jobs:
       - uses: googleapis/release-please-action@v4
         id: release
         with:
-          # this assumes that you have created a personal access token
-          # (PAT) and configured it as a GitHub action secret named
-          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           config-file: .release-please-config.json
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
-      - uses: ruby/setup-ruby@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
         if: ${{ steps.release.outputs.release_created }}
-      - name: Release Gem
-        run: |
-          gem install bundler
-          bundle config unset deployment
-          bundle install
-          mkdir -p $HOME/.gem
-          touch $HOME/.gem/credentials
-          chmod 0600 $HOME/.gem/credentials
-          printf -- "---\n:rubygems_api_key: ${RUBYGEMS_API_KEY}\n" > $HOME/.gem/credentials
-          gem build *.gemspec
-          gem push *.gem
+      - uses: rubygems/release-gem@v1
         if: ${{ steps.release.outputs.release_created }}
