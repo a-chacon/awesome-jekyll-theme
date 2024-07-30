@@ -1,9 +1,0 @@
-{
-  "release-type": "ruby",
-  "packages": {
-    ".": {
-      "release-type": "ruby",
-      "package-name": "awesome-jekyll-theme"
-    }
-  }
-}
