@@ -26,9 +26,5 @@ jobs:
         with:
           bundler-cache: true
         if: ${{ steps.release.outputs.release_created }}
-      - name: Modify _config.yml
-        if: ${{ steps.release.outputs.release_created }}
-        run: |
-          sed -i '/^rrss:/,/^[^ ]/s/^/#/' _config.yml
       - uses: rubygems/release-gem@v1
         if: ${{ steps.release.outputs.release_created }}
