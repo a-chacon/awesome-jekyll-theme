@@ -2,18 +2,23 @@
 layout: default
 ---
 
-<section id="main" class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2">
+<section
+  id="main"
+  class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2"
+>
   <div class="md:mx-2">
-    <img class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full" src="{{ page.image | relative_url }}"
-      alt="{{ page.description }}">
+    <img
+      class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full"
+      src="{{ page.image | relative_url | default: 'https://ik.imagekit.io/ikmedia/avif_samples/photo3_avif_6O32dW2NT.png' }}"
+      alt="{{ page.description }}"
+    />
   </div>
   <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0">
-    <div class="prose prose-h1:mb-1">
-      {{ page.main_content | markdownify }}
-    </div>
+    <div class="prose prose-h1:mb-1">{{ page.main_content | markdownify }}</div>
 
-    <p class="mt-4 ">
-      {{ site.data[site.active_lang].strings.home.contact_me | default: site.data['en'].strings.home.contact_me}}
+    <p class="mt-4">
+      {{ site.data[site.active_lang].strings.home.contact_me | default:
+      site.data['en'].strings.home.contact_me}}
     </p>
 
     {%include contact_channels.html %}
@@ -21,109 +26,139 @@ layout: default
 </section>
 
 {% if site.posts.size > 0 %}
-<section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+<section
+  id="blog"
+  class="container mx-auto flex flex-col items-center justify-center min-h-screen"
+>
   <div class="py-16">
     <h2 class="text-3xl font-bold text-center md:text-left">
       {{ site.data[site.active_lang].strings.home.blog_title | default:
       site.data['en'].strings.home.blog_title}}
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
-      {% for post in site.posts limit:3 %}
-      {% include post_card.html post=post %}
-      {% endfor %}
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
+    >
+      {% for post in site.posts limit:3 %} {% include post_card.html post=post
+      %} {% endfor %}
     </div>
+
+    {% assign blog_page = site.pages | where: 'layout', 'blog' | where_exp:
+    'page', "page.path contains '/category/'" | first %} {% if blog_page %}
     <div class="pt-4 text-center">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/blog' | relative_url }}">
+      <a
+        class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
+        href="{{ blog_page.url | relative_url }}"
+      >
         {{ site.data[site.active_lang].strings.home.see_more_posts | default:
         site.data['en'].strings.home.see_more_posts}}
       </a>
     </div>
+    {% endif %}
   </div>
 </section>
-{% endif %}
-
-
-{% if site.projects.size > 0 %}
-<section id="projects" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+{% endif %} {% if site.projects.size > 0 %}
+<section
+  id="projects"
+  class="container mx-auto flex flex-col items-center justify-center min-h-screen"
+>
   <div class="py-16">
     <h2 class="text-3xl font-bold text-center md:text-left">
       {{ site.data[site.active_lang].strings.home.projects_title | default:
       site.data['en'].strings.home.projects_title}}
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 py-8 md:py-16">
-      {% for project in site.projects limit:2 %}
-      {% include project_card.html project=project%}
-      {% endfor %}
+      {% for project in site.projects limit:2 %} {% include project_card.html
+      project=project%} {% endfor %}
     </div>
-    <div class="pt-4 text-center ">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
-        href="{{'/projects' | relative_url }}">
+    <div class="pt-4 text-center">
+      <a
+        class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
+        href="{{'/projects' | relative_url }}"
+      >
         {{ site.data[site.active_lang].strings.home.see_more_projects | default:
         site.data['en'].strings.home.see_more_projects }}
       </a>
     </div>
   </div>
 </section>
+{% endif %} {% assign trimmed_content = content | strip | replace: "\n", "" |
+replace: "\r", "" | replace: "\t", "" %} {% if trimmed_content != "" %}
+<section
+  id="content"
+  class="container mx-auto flex flex-col items-center justify-center min-h-screen"
+>
+  <article class="prose mx-auto py-16">{{content}}</article>
+</section>
 {% endif %}
 
-<section id="content" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
-  <article class="prose mx-auto py-16">
-    {{content}}
-  </article>
-</section>
-
-<div id="dot-nav" class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
-  <a href="#main" aria-label="Jump to main section"
-    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
+<div
+  id="dot-nav"
+  class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4"
+>
+  <a
+    href="#main"
+    aria-label="Jump to main section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"
+  ></a>
   {% if site.posts.size > 0 %}
-  <a href="#blog" aria-label="Jump to blog section"
-    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
+  <a
+    href="#blog"
+    aria-label="Jump to blog section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"
+  ></a>
+  {% endif %} {% if site.projects.size > 0 %}
+  <a
+    href="#projects"
+    aria-label="Jump to projects section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"
+  ></a>
+  {% endif %} {% if trimmed_content != "" %}
+  <a
+    href="#content"
+    aria-label="Jump to content section"
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"
+  ></a>
   {% endif %}
-  {% if site.projects.size > 0 %}
-  <a href="#projects" aria-label="Jump to projects section"
-    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
-  {% endif %}
-  <a href="#content" aria-label="Jump to content section"
-    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    const navDots = document.querySelectorAll('#dot-nav .dot');
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navDots = document.querySelectorAll("#dot-nav .dot");
 
     function onScroll() {
-      let currentSection = '';
+      let currentSection = "";
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 120) { // Ajusta el valor según sea necesario
-          currentSection = section.getAttribute('id');
+        if (pageYOffset >= sectionTop - 120) {
+          // Ajusta el valor según sea necesario
+          currentSection = section.getAttribute("id");
         }
       });
 
-      navDots.forEach(dot => {
-        dot.classList.remove('bg-gray-800');
-        if (dot.getAttribute('href') === `#${currentSection}`) {
-          dot.classList.add('bg-gray-800');
+      navDots.forEach((dot) => {
+        dot.classList.remove("bg-gray-800");
+        if (dot.getAttribute("href") === `#${currentSection}`) {
+          dot.classList.add("bg-gray-800");
         }
       });
     }
 
     function smoothScroll(target) {
       document.querySelector(target).scrollIntoView({
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
 
-    navDots.forEach(dot => {
-      dot.addEventListener('click', function (event) {
+    navDots.forEach((dot) => {
+      dot.addEventListener("click", function (event) {
         event.preventDefault();
-        const target = this.getAttribute('href');
+        const target = this.getAttribute("href");
         smoothScroll(target);
       });
     });
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
   });
 </script>
