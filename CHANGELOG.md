@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.1...awesome-jekyll-theme/v0.2.2) (2024-08-12)
+
+
+### Bug Fixes
+
+* got to blog only if one page is created with the template blog. ([d9675ae](https://github.com/a-chacon/awesome-jekyll-theme/commit/d9675ae8da8aabdf27773f0ae15f7a2f7abb1a03))
+* set a default image to blog posts ([ddc0623](https://github.com/a-chacon/awesome-jekyll-theme/commit/ddc06238f0ad9de92f0ce59048c327062a1cc442))
+
+
+### Reverts
+
+* remove step added for modify _config on releasing. ([87fad60](https://github.com/a-chacon/awesome-jekyll-theme/commit/87fad609c4a49ca1dd7078ca59905c9f67ad3149))
+
 ## [0.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.0...awesome-jekyll-theme/v0.2.1) (2024-08-12)
 
 
