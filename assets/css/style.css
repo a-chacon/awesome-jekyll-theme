@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gentle-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px); /* Slight upward movement */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+a.gentle-clicked {
+  animation: gentle-bounce 0.3s ease-out; /* Shorter, smoother animation */
+}

@@ -144,6 +144,18 @@ This theme provides several **layouts** for different types of pages. Each layou
 
 ## Configuration
 
+### Type Writer Effect
+
+The Type Writer effect will be apply to all h1 elements in the site. You can disable it setting the next configuration in you \_config.yml file:
+
+```yml
+typewriter_effect: false
+```
+
+```
+
+```
+
 ### Navbar and Footer
 
 The navbar filters pages to be displayed based on a front matter called `nav`. These pages will appear in the navbar listed by the front matter `title`. If there is no `title`, then the filename is used. So, if you want to add a page to the navbar, **don't forget to add `nav: true`**.

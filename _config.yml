@@ -2,6 +2,8 @@ title: Jekyll Theme
 logo: /assets/images/logo.avif
 baseurl: /awesome-jekyll-theme
 
+typewriter_effect: true
+
 collections:
   projects:
     output: true
