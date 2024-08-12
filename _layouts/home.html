@@ -38,12 +38,12 @@ layout: default
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
     >
-      {% for post in site.posts limit:3 %} {% include post_card.html post=post
-      %} {% endfor %}
+      {% for post in site.posts limit:3 %} {% include post_card.html post=post%}
+      {% endfor %}
     </div>
 
-    {% assign blog_page = site.pages | where: 'layout', 'blog' | where_exp:
-    'page', "page.path contains '/category/'" | first %} {% if blog_page %}
+    {% assign blog_page = site.pages | where: 'layout', 'blog' | first %} {% if
+    blog_page %}
     <div class="pt-4 text-center">
       <a
         class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
