@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.0...awesome-jekyll-theme/v0.2.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* **_config.yml:** comment rss section for gem release ([86429cf](https://github.com/a-chacon/awesome-jekyll-theme/commit/86429cfb7ef4efe3ca63f308a8beaa8138037072))
+
 ## [0.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.1.3...awesome-jekyll-theme/v0.2.0) (2024-07-30)
 
 
