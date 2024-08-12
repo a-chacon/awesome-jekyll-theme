@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-between max-w-lg">
     <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
       <div class="hover:opacity-90 transition duration-300 w-full h-60 bg-cover bg-center"
-        style="background-image: url('{{post.image}}')">
+        style="background-image: url('{{ post.image | default: 'https://picsum.photos/600/400/?blur' }}')">
       </div>
     </a>
     <div class="pt-6">
