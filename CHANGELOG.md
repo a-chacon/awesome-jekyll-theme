@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.2...awesome-jekyll-theme/v0.3.0) (2024-08-12)
+
+
+### Features
+
+* add microinteractions, bounce links, type writer effect option, scroll down by sections. ([d39536f](https://github.com/a-chacon/awesome-jekyll-theme/commit/d39536f6eeddbaa3ae52085076f2918c47718e05))
+* build assets ([53e47a7](https://github.com/a-chacon/awesome-jekyll-theme/commit/53e47a7b504c2bbf88fe9f85c068b09c3abacc18))
+
+
+### Bug Fixes
+
+* **home:** link to more posts ([1e620ec](https://github.com/a-chacon/awesome-jekyll-theme/commit/1e620ec774629f307a858bc29c13c0ad0a8fef6c))
+
 ## [0.2.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.1...awesome-jekyll-theme/v0.2.2) (2024-08-12)
 
 
