@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.1...awesome-jekyll-theme/v1.0.0) (2024-08-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* rrss is named contact_channels.
+
+### Code Refactoring
+
+* rrss is named contact_channels.  ([ea99927](https://github.com/a-chacon/awesome-jekyll-theme/commit/ea999276e778f29ad693a6f1adc30e09484ff2dc))
+
 ## [0.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.0...awesome-jekyll-theme/v0.3.1) (2024-08-15)
 
 
