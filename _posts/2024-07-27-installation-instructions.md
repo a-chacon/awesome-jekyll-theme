@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Installing Awesome Jekyll Theme!
-image: 'https://picsum.photos/700/300'
+image: "https://picsum.photos/700/300"
 category: Jekyll
+author: Me
 ---
+
 ## Installation: The Easy Way to Have Your Site on GitHub Pages (Recommended!) 😄
 
 1. **Navigate to the Main Page of the Repository**
@@ -84,4 +86,3 @@ category: Jekyll
    ```bash
     bundle exec jekyll serve
    ```
-

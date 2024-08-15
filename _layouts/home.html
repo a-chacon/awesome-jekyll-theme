@@ -15,13 +15,13 @@ layout: default
   </div>
   <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0">
     <div class="prose prose-h1:mb-1">{{ page.main_content | markdownify }}</div>
-
+    {% if site.contact_channels_section %}
     <p class="mt-4">
       {{ site.data[site.active_lang].strings.home.contact_me | default:
       site.data['en'].strings.home.contact_me}}
     </p>
 
-    {%include contact_channels.html %}
+    {%include contact_channels.html %} {% endif %}
   </div>
 </section>
 
