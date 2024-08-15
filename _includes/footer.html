@@ -13,7 +13,8 @@
           {{ site.data[site.active_lang].strings.footer.description | default:
           site.data['en'].strings.footer.description}}
         </p>
-        {% include contact_channels.html %}
+        {% if site.contact_channels_section %} {% include contact_channels.html
+        %} {% endif%}
       </div>
       <div class="w-full md:w-6/12 md:text-right py-4 md:py-0">
         <div class="flex flex-wrap items-top mb-6">
