@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.0...awesome-jekyll-theme/v0.3.1) (2024-08-15)
+
+
+### Bug Fixes
+
+* blog category links was not using the baseurl variable ([11fe344](https://github.com/a-chacon/awesome-jekyll-theme/commit/11fe344311d7fd20d937bc7005335d9ae9270cc5))
+
 ## [0.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.2.2...awesome-jekyll-theme/v0.3.0) (2024-08-12)
 
 
