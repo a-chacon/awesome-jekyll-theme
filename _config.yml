@@ -1,41 +1,55 @@
-title: Jekyll Theme
+title: AwesomeJT
 logo: /assets/images/logo.avif
 baseurl: /awesome-jekyll-theme
 
+##
+# Typewritter configuration.
+# Feel free to disable if you don't like it.
+##
 typewriter_effect: true
 
+##
+# Collections configuration
+##
 collections:
   projects:
     output: true
 
-rrss:
+##
+# Contact Channels configuration
+# Uncomment for enable. Available contact channels are email, github, telegram, stackoverflow, discord, mastodon.
+# Please fell free to send a PR if you need a new one.
+##
+contact_channels:
   email: "example@example.cl"
-  github: "https://github.com/"
-  telegram: "https://t.me/"
-  stackoverflow: "https://stackoverflow.com"
-  discord: "https://discord.com/"
-  mastodon: "https://lile.cl/"
+  # github: "https://github.com/"
+  # telegram: "https://t.me/"
+  # stackoverflow: "https://stackoverflow.com"
+  # discord: "https://discord.com/"
+  # mastodon: "https://lile.cl/"
 
+##
+# Plugins configuration
+##
 plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-polyglot
 
+##
+# Polyglot configuration
+##
 languages: ["en"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
 
+##
+# Archives configuration
+##
 jekyll-archives:
   enabled:
     - categories
   layout: blog
   permalinks:
     category: "/category/:name/"
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      author: "Mr. Hyde"
-      time: "2 min"

@@ -177,7 +177,7 @@ footer: true
 Contact channels are displayed in the home layout and the footer. To configure this, please add each one to your `_config.yml` file like this:
 
 ```yaml
-rrss:
+contact_channels:
   email: "andres.ch@protonmail.com"
   github: "https://github.com/a-chacon"
   telegram: "https://t.me/a_chacon"

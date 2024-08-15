@@ -1,9 +1,11 @@
 ---
 layout: post
 title: How to create an effective landing page for your campaign
-image: 'https://picsum.photos/500/300'
+image: "https://picsum.photos/500/300"
 category: Ruby On Rails
+author: Me
 ---
+
 Lorem markdownum causa finita rector cura uterque: Telamonque possit; attulerat
 totaque pugnat at vincar corpore ad exiguo canisve. Est tuo coniugis siquis
 bracchia exitio quibus! Et pater poeniceam numen tenebrisque quem incubuit hic
@@ -55,4 +57,3 @@ turpius paludes. Haut superare _propior satelles harundine_ nostrum
 _Essem quem nunc_ omnia limite, tu narrat pennae et senes neque, in diebus
 pugnat. Aurae enim lenta agresti velut relictis, hos luctus Sminthea _cadunt
 intonsum_ volenti spatio, speciosam secuta si. Ingenii nullo orientis, secuta!
-
