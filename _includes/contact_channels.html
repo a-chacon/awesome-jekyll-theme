@@ -11,7 +11,7 @@
       alt="Email Icon"
     />
   </a>
-  {% endif %} {% if contact_channels.github %}
+  {% endif %} {% if contact_channels.github and contact_channels.github != ""%}
   <a
     class="transition hover:scale-110 duration-300"
     href="{{ contact_channels.github }}"
