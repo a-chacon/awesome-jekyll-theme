@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.0...awesome-jekyll-theme/v1.0.1) (2024-09-01)
+
+
+### Bug Fixes
+
+* blog and project section layout  bug ([#21](https://github.com/a-chacon/awesome-jekyll-theme/issues/21)) ([9e2c4af](https://github.com/a-chacon/awesome-jekyll-theme/commit/9e2c4af64fad819cf2dfbddd14b325f654d4e792))
+
 ## [1.0.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.1...awesome-jekyll-theme/v1.0.0) (2024-08-15)
 
 
