@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.1...awesome-jekyll-theme/v1.1.0) (2024-09-08)
+
+
+### Features
+
+* add share message and buttons on the top of posts ([a873c8d](https://github.com/a-chacon/awesome-jekyll-theme/commit/a873c8d021e0587a12d024c3a282a9c7e4e68c66))
+
 ## [1.0.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.0...awesome-jekyll-theme/v1.0.1) (2024-09-01)
 
 
