@@ -8,7 +8,8 @@ footer:
   title: "Mantengamosnos en contacto!"
   description: "Encuéntrame en cualquiera de estas plataformas:"
   pages: Páginas
-
 blog:
   read_more: "Read More ->"
   more_articles: "Más Artículos"
+post:
+  share: ¿Te gustó? ¡Compártelo!
