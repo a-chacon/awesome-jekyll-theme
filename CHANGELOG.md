@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.1.0...awesome-jekyll-theme/v1.2.0) (2024-09-23)
+
+
+### Features
+
+* add rss icon if plugin jekyll-feed is enabled ([9660642](https://github.com/a-chacon/awesome-jekyll-theme/commit/9660642a7a4dd661102782e8aa7a21a3c54f387a))
+
 ## [1.1.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.0.1...awesome-jekyll-theme/v1.1.0) (2024-09-08)
 
 
