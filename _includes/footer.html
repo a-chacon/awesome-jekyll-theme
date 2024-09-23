@@ -26,11 +26,8 @@
             <ul>
               {% for page in site.pages %} {% if page.footer %}
               <li>
-                <a
-                  class="font-mulish text-slate-600 hover:text-sky-400 dark:text-slate-300 dark:hover:text-slate-200"
-                  href="{{ page.url | relative_url }}"
-                  >{{ page.title | default: page.name }}</a
-                >
+                <a class="font-mulish text-slate-600 hover:text-sky-400 dark:text-slate-300 dark:hover:text-slate-200"
+                  href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a>
               </li>
               {% endif%} {% endfor %}
             </ul>
@@ -38,27 +35,30 @@
         </div>
       </div>
     </div>
-    <div
-      class="font-mulish flex flex-wrap items-center md:justify-between justify-center my-8"
-    >
+    <div class="font-mulish flex flex-wrap items-center md:justify-between justify-center my-8">
       <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        {% if site.plugins contains 'jekyll-feed' %}
+        <a href="{{ '/feed.xml' | relative_url }}" class="p-2">
+          <svg fill="#000000" viewBox="-3 0 19 19" xmlns="http://www.w3.org/2000/svg" class="w-10 mx-auto">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M.926 12.818a1.403 1.403 0 1 1 0 1.984 1.402 1.402 0 0 1 0-1.984zm10.531 2.357a1.03 1.03 0 0 1-1.029-1.03 8.775 8.775 0 0 0-.694-3.438A8.826 8.826 0 0 0 1.591 5.31a1.03 1.03 0 1 1 0-2.059 10.817 10.817 0 0 1 4.24.857 10.893 10.893 0 0 1 3.463 2.334 10.867 10.867 0 0 1 3.19 7.703 1.027 1.027 0 0 1-1.027 1.029zm-4.538 0a1.03 1.03 0 0 1-1.029-1.03 4.297 4.297 0 0 0-4.299-4.298 1.03 1.03 0 0 1 0-2.059 6.362 6.362 0 0 1 5.857 3.883 6.298 6.298 0 0 1 .5 2.475 1.03 1.03 0 0 1-1.029 1.029z">
+              </path>
+            </g>
+          </svg>
+        </a>
+        {% endif %}
         <div class="text-sm text-blueGray-500 font-semibold py-1">
           © <span id="get-current-year">{{currentYear}}</span>
-          <a
-            href="https://www.creative-tim.com/product/notus-js"
-            class="text-blueGray-500 hover:text-gray-800"
-            target="_blank"
-            aria-label="Creative C"
-            >{{site.title}}.</a
-          >
+          <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800"
+            target="_blank" aria-label="Creative C">{{site.title}}.</a>
           All rights reserved.
           <p class="text-xs pt-4">
             Built with ❤️ using the
-            <a
-              class="hover:text-sky-400"
-              href="https://github.com/a-chacon/awesome-jekyll-theme"
-              >Awesome Jekyll Theme</a
-            >.
+            <a class="hover:text-sky-400" href="https://github.com/a-chacon/awesome-jekyll-theme">Awesome Jekyll
+              Theme</a>.
           </p>
         </div>
       </div>
