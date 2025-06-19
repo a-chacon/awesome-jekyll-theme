@@ -29,7 +29,9 @@ layout: default
       </div>
     </div>
 
+    {% if page.image %}
     <img class="w-full" src="{{page.image | relative_url}}" alt="{{page.title}}">
+    {% endif %}
 
     <div class="my-6">
       {{content}}
