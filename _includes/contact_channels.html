@@ -73,4 +73,29 @@
     />
   </a>
   {% endif %}
+  {% if contact_channels.linkedin %}
+  <a
+    class="transition hover:scale-110 duration-300"
+    href="{{ contact_channels.linkedin }}"
+    target="_blank"
+  >
+    <img
+      class="h-6 w-6"
+      src="{{'/assets/images/contact_channels/linkedin.svg' | relative_url }}"
+      alt="LinkedIn Icon"
+    />  
+  </a>
+  {% endif %} {% if contact_channels.threads %}
+  <a
+    class="transition hover:scale-110 duration-300"
+    href="{{ contact_channels.threads }}"
+    target="_blank"
+  >
+    <img
+      class="h-6 w-6"
+      src="{{'/assets/images/contact_channels/threads.svg' | relative_url }}"
+      alt="Threads Icon"
+    />
+  </a>
+  {% endif %}
 </div>

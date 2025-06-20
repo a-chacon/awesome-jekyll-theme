@@ -30,6 +30,8 @@ contact_channels:
   # stackoverflow: "https://stackoverflow.com"
   # discord: "https://discord.com/"
   # mastodon: "https://lile.cl/"
+  # threads: "https://www.threads.net/@example"
+  # linkedin: "https://www.linkedin.com/in/example/"
 
 ##
 # Plugins configuration
