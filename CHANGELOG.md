@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.1...awesome-jekyll-theme/v1.3.0) (2025-06-21)
+
+
+### Features
+
+* Include threads and linkedin as contact channels ([#31](https://github.com/a-chacon/awesome-jekyll-theme/issues/31)) ([dc3cb3f](https://github.com/a-chacon/awesome-jekyll-theme/commit/dc3cb3f7177089aa99ce88fb6a29dbcac6c55827))
+* Update the page layout to show content in the same style as the post layout ([#27](https://github.com/a-chacon/awesome-jekyll-theme/issues/27)) ([f844ec5](https://github.com/a-chacon/awesome-jekyll-theme/commit/f844ec558aa556ccf6b8b4282bd5db01243b7fd4))
+
+
+### Bug Fixes
+
+* grammar and typo in english localization string for contact_me ([#30](https://github.com/a-chacon/awesome-jekyll-theme/issues/30)) ([876e712](https://github.com/a-chacon/awesome-jekyll-theme/commit/876e712d89fdc1a62693ff74880d4ce4bec4a997))
+
 ## [1.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.0...awesome-jekyll-theme/v1.2.1) (2025-01-31)
 
 
