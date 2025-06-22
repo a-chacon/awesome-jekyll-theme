@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.3.0...awesome-jekyll-theme/v1.3.1) (2025-06-22)
+
+
+### Bug Fixes
+
+* Generate a different image for each post card ([#34](https://github.com/a-chacon/awesome-jekyll-theme/issues/34)) ([50729dc](https://github.com/a-chacon/awesome-jekyll-theme/commit/50729dced03afeb555aca00e5f53ad9f5bba5561))
+* The cover page img tag is emitted only if image front matter is set ([#29](https://github.com/a-chacon/awesome-jekyll-theme/issues/29)) ([8d1446b](https://github.com/a-chacon/awesome-jekyll-theme/commit/8d1446bea66bdbc254a57ef3a34c121abd26ae5c))
+
 ## [1.3.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.1...awesome-jekyll-theme/v1.3.0) (2025-06-21)
 
 
