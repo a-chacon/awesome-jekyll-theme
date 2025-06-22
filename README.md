@@ -188,6 +188,14 @@ contact_channels:
 
 **If you need to add a new one, just ask or send a PR**
 
+### Favicon and other head element customizations
+
+If you want to have a custom [favicon](https://en.wikipedia.org/wiki/Favicon) for your site, or in any other way add more to the `<head>` element for all pages, then you can simply create a new file `custom_head.html` in the `_includes` directory and put in any such customization. For example, if you want to add a favicon that is location at (say) `assets/images/logo.avif`, then you simply need to create a new file `_include/custom_head.html` and put the following in it.
+```html
+<link rel="shortcut icon" type="image/avif" href="/assets/images/logo.avif" />
+```
+_Note: This theme already contains a file `assets/images/logo.avif`, and so if you create a new one in your site, then it will overwrite the theme file._
+
 ## Plugins
 
 The Awesome Jekyll theme comes with the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to ensure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to learn how to set it up.
