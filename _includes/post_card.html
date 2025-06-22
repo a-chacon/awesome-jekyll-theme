@@ -1,11 +1,10 @@
 <div class="flex flex-col justify-between">
   <div class="flex flex-col justify-between max-w-lg">
     <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
-        {% assign random_number = include.post_index | default: 0 %}
-        {% assign random_image = 'https://picsum.photos/600/400/?blur&random=' | append: random_number %}
-        {% assign post_image = include.post.image | default: random_image %}
+        {% assign random_id = include.post.date | date: "%s" %}
+        {% assign random_image = 'https://picsum.photos/600/400/?blur&random=' | append: random_id %}
       <div class="hover:opacity-90 transition duration-300 w-full h-60 bg-cover bg-center"
-        style="background-image: url('{{ post_image }}')">
+        style="background-image: url('{{ include.post.image | default: random_image }}')">
       </div>
     </a>
     <div class="pt-6">

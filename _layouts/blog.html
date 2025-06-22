@@ -32,11 +32,8 @@ layout: default
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
   >
-    {% assign post_index = 0 %}
-    {% for post in rest_posts %}
-      {% include post_card.html post=post post_index=post_index %}
-      {% assign post_index = post_index | plus: 1 %}
-    {% endfor %}
+    {% for post in rest_posts %} {% include post_card.html post=post %} {%
+    endfor %}
   </div>
   {% endif%}
 </section>

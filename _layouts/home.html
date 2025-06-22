@@ -38,9 +38,7 @@ layout: default
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
     >
-      {% for post in site.posts limit:3 %}
-        {% include post_card.html post=post post_index=post_index %}
-        {% assign post_index = post_index | plus: 1 %}
+      {% for post in site.posts limit:3 %} {% include post_card.html post=post%}
       {% endfor %}
     </div>
 
