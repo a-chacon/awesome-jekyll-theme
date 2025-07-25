@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.1...awesome-jekyll-theme/v1.4.2) (2025-07-25)
+
+
+### Bug Fixes
+
+* remove on scroll effects for some sections ([5d57a53](https://github.com/a-chacon/awesome-jekyll-theme/commit/5d57a53da58d1b4cbc8be785859aa2a464a281e9))
+
 ## [1.4.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.0...awesome-jekyll-theme/v1.4.1) (2025-07-25)
 
 
