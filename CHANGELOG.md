@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.0...awesome-jekyll-theme/v1.4.1) (2025-07-25)
+
+
+### Bug Fixes
+
+* project card and language switcher theme ([3f161d5](https://github.com/a-chacon/awesome-jekyll-theme/commit/3f161d52ea01033527c25a7e16bf0e6aec4aa921))
+
 ## [1.4.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.3.1...awesome-jekyll-theme/v1.4.0) (2025-07-25)
 
 
