@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.2...awesome-jekyll-theme/v1.4.3) (2025-08-17)
+
+
+### Bug Fixes
+
+* add custom head include again ([ddf4e8f](https://github.com/a-chacon/awesome-jekyll-theme/commit/ddf4e8f3e76a65e7b023b790490a3ac9bd478811))
+
 ## [1.4.2](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.1...awesome-jekyll-theme/v1.4.2) (2025-07-25)
 
 
