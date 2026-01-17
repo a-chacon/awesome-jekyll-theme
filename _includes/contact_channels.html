@@ -23,6 +23,18 @@
       alt="Github Icon"
     />
   </a>
+  {% endif %} {% if contact_channels.gitlab and contact_channels.gitlab != ""%}
+  <a
+          class="transition hover:scale-110 duration-300"
+          href="{{ contact_channels.gitlab }}"
+          target="_blank"
+  >
+    <img
+            class="h-6 w-6 dark:invert"
+            src="{{'/assets/images/contact_channels/gitlab.svg' | relative_url }}"
+            alt="Gitlab Icon"
+    />
+  </a>
   {% endif %} {% if contact_channels.telegram %}
   <a
     class="transition hover:scale-110 duration-300"
