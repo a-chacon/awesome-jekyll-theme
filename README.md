@@ -168,10 +168,12 @@ Contact channels are displayed in the home layout and the footer. To configure t
 contact_channels:
   email: "andres.ch@protonmail.com"
   github: "https://github.com/a-chacon"
+  gitlab: "https://gitlab.com/example"
   telegram: "https://t.me/a_chacon"
   stackoverflow: "https://stackoverflow.com/users/16847024/andr%c3%a9s"
   discord: "https://discord.com/users/673943171369140252"
   mastodon: "https://lile.cl/@achacon"
+  linkedin: "https://www.linkedin.com/in/example"
 ```
 
 **If you need to add a new one, just ask or send a PR**

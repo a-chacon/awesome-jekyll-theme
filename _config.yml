@@ -11,7 +11,7 @@ collections:
 
 ##
 # Contact Channels configuration
-# Uncomment for enable. Available contact channels are email, github, telegram, stackoverflow, discord, mastodon.
+# Uncomment for enable. Available contact channels are email, github, gitlab, telegram, stackoverflow, discord, mastodon, and linkedin.
 # Please fell free to send a PR if you need a new one.
 # DISABLE GITHUB setting it as an empty string: ""
 # if false, then no contact channels will be display.
@@ -20,6 +20,7 @@ contact_channels_section: true
 contact_channels:
   # email: "example@example.cl"
   github: "https://github.com/a-chacon"
+  # gitlab: "https://gitlab.com/example"
   # telegram: "https://t.me/"
   # stackoverflow: "https://stackoverflow.com"
   # discord: "https://discord.com/"
