@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.3...awesome-jekyll-theme/v1.5.0) (2026-01-20)
+
+
+### Features
+
+* Added gitlab contact channel ([#45](https://github.com/a-chacon/awesome-jekyll-theme/issues/45)) ([76163d8](https://github.com/a-chacon/awesome-jekyll-theme/commit/76163d810bc1a7695ab95b43145568ac3171bd53))
+
+
+### Bug Fixes
+
+* remove text-black css and some small change in README and footer ([#42](https://github.com/a-chacon/awesome-jekyll-theme/issues/42)) ([5b62a22](https://github.com/a-chacon/awesome-jekyll-theme/commit/5b62a220a477304ad9921c4017f9c7c62a9de737))
+
 ## [1.4.3](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.4.2...awesome-jekyll-theme/v1.4.3) (2025-08-17)
 
 
