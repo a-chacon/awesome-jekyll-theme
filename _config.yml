@@ -20,17 +20,17 @@ collections:
 contact_channels_section: true
 contact_channels:
   - name: email
-    value: "kirk@kirkg.us"
+    value: "user@domain.com"
     logo: email.svg
     prefix: "mailto:"
   - name: linkedin
-    value: "https://www.linkedin.com/in/kirkgleaosn/"
+    value: "https://www.linkedin.com/in/user/"
     logo: linkedin.svg
   - name: github
-    value: "https://github.com/kgleason"
+    value: "https://github.com/user"
     logo: github-mark.svg
   - name: gitlab
-    value: "https://gitlab.com/kgleason"
+    value: "https://gitlab.com/user"
     logo: gitlab.svg
   # - name: telegram
   #   value: "https://t.me/"
