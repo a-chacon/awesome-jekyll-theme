@@ -180,14 +180,6 @@ New channels can be added by extending the array. The channels will be rendered 
 
 If a channel requires a prefix other than http/s, the prefix property can be set. The prefix value will be prepended to the item.value. See the "email" channel above for an example. If no prefix is specified, the item.value is used as is.
 
-### Favicon and other head element customizations
-
-The `custom_head.html` in the `_includes` is configured to look for a [favicon](https://en.wikipedia.org/wiki/Favicon) located at `assets/images/favicon.ico`. The [favicon](https://en.wikipedia.org/wiki/Favicon) can be removed by commenting out the only line in the file, or by placing an empty `custom_head.html` in your local `_includes`.
-
-_Note: By default, there is no `assets/images/favicon.ico` included with the theme._
-
-You can also use `custom_head.html` to add additional things to the header area of your site.
-
 ## Plugins
 
 The Awesome Jekyll theme comes with the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to ensure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to learn how to set it up.
