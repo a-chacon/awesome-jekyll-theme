@@ -100,6 +100,7 @@ layout: default
   </section>
 {% endif %}
 
+{% if site.dot_nav %}
 <div
   id="dot-nav"
   class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4"
@@ -129,5 +130,6 @@ layout: default
   ></a>
   {% endif %}
 </div>
+{% endif %}
 
 <script src="{{ '/assets/js/dot-navigation.js'| relative_url }}"></script>

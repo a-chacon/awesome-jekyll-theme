@@ -10,23 +10,44 @@ collections:
     output: true
 
 ##
-# Contact Channels configuration
-# Uncomment for enable. Available contact channels are email, github, gitlab, telegram, stackoverflow, discord, mastodon, and linkedin.
-# Please fell free to send a PR if you need a new one.
-# DISABLE GITHUB setting it as an empty string: ""
+# Contact Channels configuration. Uncomment a channel to enable. Add new channels as needed.
+# Channels will be displayed in the order listed.
+# Set contact_channels_section to true to enable the section,
 # if false, then no contact channels will be display.
+#
+# If a prefix property is set, it will be prepended to the value in the output HTML.
 ##
 contact_channels_section: true
 contact_channels:
-  # email: "example@example.cl"
-  github: "https://github.com/a-chacon"
-  # gitlab: "https://gitlab.com/example"
-  # telegram: "https://t.me/"
-  # stackoverflow: "https://stackoverflow.com"
-  # discord: "https://discord.com/"
-  # mastodon: "https://lile.cl/"
-  # threads: "https://www.threads.net/@example"
-  # linkedin: "https://www.linkedin.com/in/example/"
+  - name: email
+    value: "user@domain.com"
+    logo: email.svg
+    prefix: "mailto:"
+  - name: linkedin
+    value: "https://www.linkedin.com/in/user/"
+    logo: linkedin.svg
+  - name: github
+    value: "https://github.com/user"
+    logo: github-mark.svg
+  - name: gitlab
+    value: "https://gitlab.com/user"
+    logo: gitlab.svg
+  # - name: telegram
+  #   value: "https://t.me/"
+  #   logo: telegram.svg
+  # - name: stackoverflow
+  #   value: "https://stackoverflow.com"
+  #   logo: stackoverflow.svg
+  # - name: discord
+  #   value: "https://discord.com/"
+  #   logo: discord.svg
+  # - name: mastodon
+  #   value: "https://lile.cl/"
+  #   logo: mastodon.svg
+  # - name: threads
+  #   value: "https://www.threads.net/@example"
+  #   logo: threads.svg
+
 
 ##
 # Plugins configuration
@@ -53,3 +74,14 @@ jekyll-archives:
   layout: blog
   permalinks:
     category: "/category/:name/"
+
+##
+# Misc configuration
+##
+# By default, there is a nav widget that pops up on the left side of the home page.
+# This flag will disable that widget when set to false.
+dot_nav: false
+
+# By default, there is a pages area in the footer.
+# This flag will disable that area when set to false.
+footer_pages: false

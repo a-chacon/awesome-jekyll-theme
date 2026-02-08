@@ -165,28 +165,20 @@ footer: true
 Contact channels are displayed in the home layout and the footer. To configure this, please add each one to your `_config.yml` file like this:
 
 ```yaml
+contact_channels_section: true
 contact_channels:
-  email: "andres.ch@protonmail.com"
-  github: "https://github.com/a-chacon"
-  gitlab: "https://gitlab.com/example"
-  telegram: "https://t.me/a_chacon"
-  stackoverflow: "https://stackoverflow.com/users/16847024/andr%c3%a9s"
-  discord: "https://discord.com/users/673943171369140252"
-  mastodon: "https://lile.cl/@achacon"
-  linkedin: "https://www.linkedin.com/in/example"
+  - name: email
+    value: "test@example.com"
+    logo: email.svg
+    prefix: "mailto:"
+  - name: some_other_channel
+    value: "https://some_other_channel.com/@me"
+    logo: some_other_channel.svg
 ```
 
-**If you need to add a new one, just ask or send a PR**
+New channels can be added by extending the array. The channels will be rendered in the order they appear in the array.
 
-### Favicon and other head element customizations
-
-If you want to have a custom [favicon](https://en.wikipedia.org/wiki/Favicon) for your site, or in any other way add more to the `<head>` element for all pages, then you can simply create a new file `custom_head.html` in the `_includes` directory and put in any such customization. For example, if you want to add a favicon that is location at (say) `assets/images/logo.avif`, then you simply need to create a new file `_include/custom_head.html` and put the following in it.
-
-```html
-<link rel="shortcut icon" type="image/avif" href="/assets/images/logo.avif" />
-```
-
-_Note: This theme already contains a file `assets/images/logo.avif`, and so if you create a new one in your site, then it will overwrite the theme file._
+If a channel requires a prefix other than http/s, the prefix property can be set. The prefix value will be prepended to the item.value. See the "email" channel above for an example. If no prefix is specified, the item.value is used as is.
 
 ## Plugins
 
