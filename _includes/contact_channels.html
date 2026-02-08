@@ -1,5 +1,5 @@
 {% if include.display == "text" %}
-<span>{% for channel in site.contact_channels %}<a class="transition hover:scale-110 duration-300" href="{{ channel.prefix }}{{ channel.value }}" aria-label="{{ channel.name }}">{{ channel.name | capitalize }}</a>{% unless forloop.last %} | {% endunless %} {% endfor %} </span>
+    <span>{% for channel in site.contact_channels %}<a class="transition hover:scale-110 duration-300" href="{{ channel.prefix }}{{ channel.value }}" aria-label="{{ channel.name }}">{{ channel.name | capitalize }}</a>{% unless forloop.last %} | {% endunless %} {% endfor %} </span>
 {% else %}
 <div class="flex justify-center md:justify-start pt-2 gap-6">
     {% for channel in site.contact_channels %}
